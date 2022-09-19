@@ -1,0 +1,375 @@
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('TTLakes-Regular.eot');
+    src: url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/tt-lakes/TTLakesCondensed-Regular.woff') format('woff'),
+    url('../fonts/tt-lakes/TTLakesCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Мобильная версия */
+
+body {
+    width: 320px;
+    font-family: 'TT Lakes Regular';
+    padding: 0;
+    margin: 0;
+    background: #F8F8F8;
+}
+
+.logo {
+    height: 40px;    
+    border-right: 2px solid #EAEAEA;
+    line-height: 32px;
+    padding-right: 16px;
+}
+.menu__main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: #FFFFFF;
+}
+
+.menu__main__logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu__main__logo .menu__icon {
+    margin-left: 16px;
+}
+
+.menu__main__contacts {
+    display: none;
+}
+
+.menu__main__repair-menu {
+    display: flex;
+}
+
+.menu__icon {
+    border: none;
+    background-color: transparent;
+    align-items: center;
+}
+
+.menu__title:not(.title) {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px -1px #D9FFF5;
+}
+
+.menu__title__repair-menu {
+    display: none;
+}
+
+.menu__title .title{
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+    border-left: 4px solid #41F6D7;
+    border-radius: 2px;
+    padding: 0;
+    margin: 0;
+    padding-left: 12px;
+    padding-right: 16px;
+    margin-top: 24px;
+}
+
+.menu__navbar {
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: scroll;
+    list-style-type: none;
+    padding: 0
+}
+
+.menu__navbar__navigation {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 9px;
+    margin-left: 16px;
+}
+
+.menu__navbar__navigation:hover {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background: #FFFFFF;
+}
+/*
+.page-content__text {
+    margin: 0;
+    padding-top: 24px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+}
+*/
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content__about-us {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    
+    padding-top: 24px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;    
+}
+
+.page-content__text:nth-child(2){
+    display: none;
+}
+
+.page-content__more {
+    margin: 0;
+    padding-left: 24px;
+    padding-top: 16px;
+}
+
+.page-content__more_text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bolder;
+    padding-left: 16px;
+}
+
+.page-content__img {
+    padding-top: 16px;
+    order: 2;
+}
+
+.page-content__img_image{
+    width: 320px;
+    order: 2;    
+}
+
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+@media (min-width: 769px) and (max-width: 1119px) {
+    body {
+        width: 769px;
+        font-family: 'TT Lakes Regular';
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        border: 0;
+        border-left: 2px solid #EAEAEA;   
+        padding-left: 16px;     
+    }
+
+    .menu__main {
+        display: flex;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    
+    .menu__main__logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu__main__logo .menu__icon {
+        margin-left: 16px;
+        padding-right: 20px;
+    }
+
+    .menu__main__for-clients{
+        display: flex;
+        justify-content: flex-end;
+        gap: 16px;
+    }
+    
+    .menu__main__contacts {
+        display: flex;
+    }
+
+    .menu__main__contacts .menu__icon:last-child .icon {
+        padding-right: 20px;
+        border-right: 2px solid #EAEAEA;
+        
+    }
+
+    .menu__main__repair-menu {
+        display: flex;
+    }
+
+    .page-content {
+        flex-direction: row;
+    }
+
+    .pagecontent__text {
+        flex-direction: column;
+        max-width: 312px;
+        max-height: 160px;        
+        overflow: hidden;
+    }
+
+    .page-content-sidebare {
+        flex-direction: column;
+    }
+
+    .page-content__button {
+        padding-top: 10px;
+    }
+
+    .page-content pagecontent__text .page-content__about-us {
+        padding-left: 24px;
+    }
+
+    .page-content__about-us {
+        padding-bottom: 0px;
+    }
+
+    .page-content__img_image {
+        order: 0;
+        float:right;
+        border-radius: 6px;
+        margin-left: 48px;
+        margin-right: 25px;
+        width: 360px;
+    }    
+
+    .page-content__text:nth-child(2){
+        display: inherit;
+    }
+}
+
+@media (min-width: 1120px){
+    body {
+        width: 1120px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu__title {
+        padding-top: 42px;
+        padding-left: 1px;
+        padding-right: 25px;                
+        align-items: center;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    .menu__title .title{
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+        border-left: 3px solid #41F6D7;
+        padding-left: 30px;
+    }
+
+    .menu__navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu__title__repair-menu {
+        display: flex;        
+        text-align: center;
+        align-items: center;
+    }
+
+    .menu__icon {
+        padding-left: 8px;
+    }
+
+    .label {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+
+    .page-content__text:nth-child(2){
+        display: inherit;
+    }
+    
+    .page-content__img_image {
+        float: right;
+        order: 01;
+        justify-self: center;
+        width: unset;
+        padding-bottom: 49px;
+    }
+
+    .page-content {
+        flex-direction: row;
+    }
+
+    .pagecontent__text {
+        flex-direction: column;
+        width: 490px;
+        white-space: wrap;
+        margin-left: 34px;
+        margin-right: 36px;
+    }
+}
+
+
+
+/*
+.icon {
+    width: 40px;
+}
+
+.menu__main,.menu__main__logo,.menu__main__repair-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.page-content__text:last-child {
+    display: none;
+}
+
+.menu__main__contacts {
+    display: none;
+}
+
+.menu__navbar {
+    display: flex;
+    align-self:flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    white-space: none;
+    overflow: scroll;
+    list-style-type: none;
+}
+
+.nav-link {
+    white-space: none;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.page-content__img_image {
+    width: 320px;
+    border-radius: 6px;
+}
+*/
