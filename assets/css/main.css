@@ -2,8 +2,8 @@
     font-family: 'TT Lakes Regular';
     src: url('TTLakes-Regular.eot');
     src: url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/tt-lakes/TTLakesCondensed-Regular.woff') format('woff'),
-    url('../fonts/tt-lakes/TTLakesCondensed-Regular.ttf') format('truetype');
+    url('../fonts/tt-lakes/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/tt-lakes/TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
