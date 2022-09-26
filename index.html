@@ -5,53 +5,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <main>
-            <header class="menu">
-                <div class="menu__main"> 
-                    <div class="menu__main__logo">
-                        <button class="menu__main__logo menu__icon"><img class="icon" src="./assets/img/button/burger.svg" alt="Меню"></button>
-                        <img class="menu__main__logo logo" src="./assets/img/logo.png" alt="ООО Рога и Копыта">
-                    </div>
-                    <div class="menu__main__for-clients">
-                        <div class="menu__main__contacts">
-                            <button class="menu__main__contacts menu__icon"><img class="icon" src="./assets/img/button/call.svg" alt="Звонок"></button>
-                            <button class="menu__main__contacts menu__icon"><img class="icon" src="./assets/img/button/chat.svg" alt="Чат"></button>
-                            <button class="menu__main__contacts menu__icon"><img class="icon" src="./assets/img/button/profile.svg" alt="Профиль"></button>
-                        </div>
-                        <div class="menu__main__repair-menu">
-                            <button class="menu__main menu__icon"><img class="icon" src="./assets/img/button/repair.svg" alt="Ремонт"></button>
-                            <button class="menu__main menu__icon"><img class="icon" src="./assets/img/button/checkstatus.svg" alt="Проверка статуса ремонта"></button>
-                        </div>
-                    </div>                
-            </header>
-            <header class="menu__title">
-                <h1 class="menu__title title">
-                    Услуги и сервисы
-                </h1>
-                <div class="menu__title__repair-menu">
-                    <label class="menu__title__repair-menu label">
-                        Оставить заявку
-                      <button class="menu__titlee__repair-menu menu__icon"><img class="icon" src="./assets/img/button/repair.svg" alt="Ремонт"></button>
-                    </label>
-                    <label class="menu__title__repair-menu label">
-                        Статус ремонта
-                      <button class="menu__titlee__repair-menu menu__icon"><img class="icon" src="./assets/img/button/checkstatus.svg" alt="Проверка статуса ремонта"></button>
-                    </label>   
+        <header class="menu">
+            <div class="menu__main"> 
+                <div class="menu__main__logo">
+                    <button class="menu__main__logo menu__icon"><img class="icon" src="./assets/img/button/burger.svg" alt="Меню"></button>
+                    <img class="menu__main__logo logo" src="./assets/img/logo.png" alt="ООО Рога и Копыта">
                 </div>
-            </header>
+                <div class="menu__main__for-clients">
+                    <div class="menu__main__contacts">
+                        <button class="menu__main__contacts menu__icon"><img class="icon" src="./assets/img/button/call.svg" alt="Звонок"></button>
+                        <button class="menu__main__contacts menu__icon"><img class="icon" src="./assets/img/button/chat.svg" alt="Чат"></button>
+                        <button class="menu__main__contacts menu__icon"><img class="icon" src="./assets/img/button/profile.svg" alt="Профиль"></button>
+                    </div>
+                    <div class="menu__main__repair-menu">
+                        <button class="menu__main menu__icon"><img class="icon" src="./assets/img/button/repair.svg" alt="Ремонт"></button>
+                        <button class="menu__main menu__icon"><img class="icon" src="./assets/img/button/checkstatus.svg" alt="Проверка статуса ремонта"></button>
+                    </div>
+                </div>                
+        </header>
+        <div class="menu__title">
+            <h1 class="menu__title title">
+                Услуги и сервисы
+            </h1>
+            <div class="menu__title__repair-menu">
+                <label class="menu__title__repair-menu label">
+                    Оставить заявку
+                  <button class="menu__titlee__repair-menu menu__icon"><img class="icon" src="./assets/img/button/repair.svg" alt="Ремонт"></button>
+                </label>
+                <label class="menu__title__repair-menu label">
+                    Статус ремонта
+                  <button class="menu__titlee__repair-menu menu__icon"><img class="icon" src="./assets/img/button/checkstatus.svg" alt="Проверка статуса ремонта"></button>
+                </label>   
+            </div>
+        </div>
+        <nav class="navbar">
             <ul class="menu__navbar">
-                <li class="menu__navbar__navigation"><a>Ремонтируемые бренды</a></li>
-                <li class="menu__navbar__navigation"><a>Дополнительные услуги</a></li>
-                <li class="menu__navbar__navigation"><a>Цены на услуги</a></li>
-                <li class="menu__navbar__navigation"><a>Адреса сервисных центров</a></li>
-                <li class="menu__navbar__navigation"><a>Специальные цены</a></li>
-                <li class="menu__navbar__navigation"><a>Отзывы</a></li> 
-            </ul>            
+                <li class="menu__navbar menu__navigation"><a class="link_nav" href="#brands">Ремонтируемые бренды</a></li>
+                <li class="menu__navbar menu__navigation"><a class="link_nav"  href="#services">Дополнительные услуги</a></li>
+                <li class="menu__navbar menu__navigation"><a class="link_nav"  href="#prices">Цены на услуги</a></li>
+                <li class="menu__navbar menu__navigation"><a class="link_nav"  href="#adresses">Адреса сервисных центров</a></li>
+                <li class="menu__navbar menu__navigation"><a class="link_nav"  href="#discount">Специальные цены</a></li>
+                <li class="menu__navbar menu__navigation"><a class="link_nav"  href="#reviews">Отзывы</a></li> 
+            </ul>
+        </nav> 
+        <main>      
             <section class="page-content">
                 <div class="page-content page-content__img">
                     <img class="page-content page-content__img_image" src="./assets/img/photo.png" alt="Сервисный центр">
                 </div>
-                <div class="page-content-sidebare">
+                <div class="page-content sidebare">
                     <div class="page-content pagecontent__text">                   
                         <p class="page-content__text page-content__about-us">
                             Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
@@ -61,10 +63,9 @@
                         </p>
                     </div>
                     <div class="page-content__button">                       
-                        <a class="page-content__button page-content__more">
-                            <img class="page-content__button page-content__more_arrows" src="./assets/img/button/icon.svg" alt="Читать далее">
+                        <button class="page-content__button page-content__more">
                             <span class="page-content__button page-content__more_text">Читать далее</span>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </section>
