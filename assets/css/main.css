@@ -75,6 +75,7 @@ body {
 .menu__main__logo {
     display: flex;
     align-items: center;
+    gap: 16px;
 }
 
 .menu__main__logo .menu__icon {
@@ -394,6 +395,8 @@ body {
 
     .page-content {
         flex-direction: row;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .pagecontent__text {
