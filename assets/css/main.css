@@ -144,6 +144,7 @@ body {
 
 
 .link_nav {
+    color: #7E7E82;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 16px;
@@ -159,6 +160,10 @@ body {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background: #FFFFFF;
+}
+
+.link_nav:link{
+    color: #7E7E82;
 }
 
 .page-content {
