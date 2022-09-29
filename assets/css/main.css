@@ -402,8 +402,10 @@ body {
 
     .page-content {
         flex-direction: row;
+        /*
         margin-top: auto;
         margin-bottom: auto;
+        */
     }
 
     .pagecontent__text {
