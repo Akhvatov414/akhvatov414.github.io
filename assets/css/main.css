@@ -396,14 +396,13 @@ body {
         width: 500px;
         height: 307px;
         border-radius: 6px;
-        margin-top: auto;
         margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .page-content {
         flex-direction: row;
-        margin-top: auto;
-        margin-bottom: auto;
     }
 
     .pagecontent__text {
