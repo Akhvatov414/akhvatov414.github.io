@@ -402,16 +402,13 @@ body {
 
     .page-content {
         flex-direction: row;
-        /*
         margin-top: auto;
         margin-bottom: auto;
-        */
     }
 
     .pagecontent__text {
         flex-direction: column;
         width: 490px;
-        white-space: wrap;
         margin-left: 34px;
         margin-right: 36px;
     }
