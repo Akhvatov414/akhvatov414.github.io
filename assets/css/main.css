@@ -70,6 +70,8 @@ body {
     width: 320px;    
 }
 
+
+
 .logo {
     height: 40px;    
     border-right: 2px solid #EAEAEA;
@@ -131,12 +133,15 @@ body {
 }
 
 .menu__icon {
-    border: none;
-    background-color: transparent;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    border: none;
+    background-color: #FF3E79;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    
 }
 
 .menu__title:not(.title) {
@@ -264,8 +269,9 @@ body {
 
 .section__image-template {
     display: inline-block;
-    width: 100%;
-    height: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .image {
@@ -304,26 +310,14 @@ body {
         align-items: center;
     }
     
-    .menu__main__logo .menu__icon {
-        margin-left: 16px;
-        padding-right: 20px;
-    }
-
     .menu__main__for-clients{
         display: flex;
         justify-content: flex-end;
-        gap: 16px;
     }
     
     .menu__main__contacts {
         display: flex;
         gap: 16px;
-    }
-
-    .menu__main__contacts .menu__icon:last-child .icon {
-        padding-right: 20px;
-        border-right: 2px solid #EAEAEA;
-        
     }
 
     .menu__main__repair-menu {
@@ -368,7 +362,7 @@ body {
         margin: 0 auto;
     }
 
-    .menu {
+    .header {
         display: none;
     }
 
@@ -403,10 +397,6 @@ body {
         gap: 32px;
     }
 
-    .menu__icon {
-        padding-left: 8px;
-    }
-
     .label {
         font-size: 16px;
         line-height: 24px;
@@ -426,6 +416,11 @@ body {
         width: 530px;
         height: 385px;
         margin-right: 15px;
+    }
+
+    .section__image-template {
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .image {
