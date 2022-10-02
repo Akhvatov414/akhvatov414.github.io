@@ -71,13 +71,14 @@ body {
 }
 
 
-
+/*
 .logo {
     height: 40px;    
     border-right: 2px solid #EAEAEA;
     line-height: 32px;
     padding-right: 16px;
 }
+*/
 
 .logo_burger {
     height: 40px;
@@ -100,7 +101,7 @@ body {
     margin-right: 24px;
 }
 
-.menu__main {
+.header-navbar {
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
@@ -109,30 +110,30 @@ body {
     background: #FFFFFF;
 }
 
-.menu__main__logo {
+.header__section-template {
     display: flex;
     align-items: center;
     gap: 16px;
+    margin-left: 16px;
 }
 
 .menu__main__logo .menu__icon {
     margin-left: 16px;
 }
 
-.menu__main__contacts {
+.header__section-template_adaptive {
     display: none;
 }
 
-.menu__main__repair-menu {
-    display: flex;
-    gap: 16px;
-}
-
-.menu__main__repair-menu:last-child {
+.header__section-template:last-child {
     margin-right: 16px;
 }
 
-.menu__icon {
+.header__section {
+    display: flex;
+}
+
+.template-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +156,7 @@ body {
 }
 
 
-.title{
+.title {
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
@@ -182,13 +183,10 @@ body {
     flex-shrink: 0;
 }
 
-
 .navbar__list {
     display: flex;
     padding: 0;
 }
-
-
 
 .navbar_link {
     color: #7E7E82;
@@ -238,11 +236,6 @@ body {
     padding-bottom: 16px; 
     */   
 }
-/*
-.page-content__text:nth-child(2){
-    display: none;
-}
-*/
 
 .section-button {    
     margin-left: 24px;
@@ -299,18 +292,13 @@ body {
         padding-left: 16px;     
     }
 
-    .menu__main {
+    .header-navbar {
         display: flex;
         padding-top: 24px;
         padding-bottom: 24px;
     }
     
-    .menu__main__logo {
-        display: flex;
-        align-items: center;
-    }
-    
-    .menu__main__for-clients{
+    .header__section-template_adaptive{
         display: flex;
         justify-content: flex-end;
     }
@@ -318,10 +306,6 @@ body {
     .menu__main__contacts {
         display: flex;
         gap: 16px;
-    }
-
-    .menu__main__repair-menu {
-        display: flex;
     }
 
     .section {
