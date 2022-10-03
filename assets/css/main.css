@@ -150,6 +150,13 @@ body {
     
 }
 
+.header__section-template:first-child::after{
+    content: '';
+    line-height: 32px;
+    height: 32px;
+    border-left: 2px solid #EAEAEA;
+}
+
 .header-title:not(.title) {
     display: flex;
     justify-content: space-between;
@@ -292,11 +299,16 @@ body {
     }
 
     .logo {
-        border: 0;
-        border-left: 2px solid #EAEAEA;   
-        padding-left: 16px;     
+        border: 0;     
     }
-
+/*
+    .header__section-template:last-child::before{
+        content: '';
+        line-height: 32px;
+        height: 32px;
+        border-left: 2px solid #EAEAEA;
+    }
+*/
     .header-navbar {
         display: flex;
         padding-top: 24px;
