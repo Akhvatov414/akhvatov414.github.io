@@ -161,6 +161,10 @@ body {
     border-left: 2px solid #EAEAEA;
 }
 
+.header-title {
+    margin-top: 24px;
+}
+
 .header-title:not(.title) {
     display: flex;
     justify-content: space-between;
@@ -418,6 +422,7 @@ body {
     .header-title {
         position: absolute;
         top: 24px;
+        margin: 0;
     }
 
     .header-title:not(.title) {
