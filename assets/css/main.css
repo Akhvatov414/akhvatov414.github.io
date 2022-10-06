@@ -181,17 +181,7 @@ body {
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
-    font-weight: bold;    
-    /*
-    border-left: 4px outset #41F6D7;
-    border-bottom: 4px outset transparent;
-    border-top: 4px outset transparent;
-    padding: 0;
-    margin: 0;
-    padding-left: 12px;
-    padding-right: 16px;
-    margin-top: 24px;
-    */
+    font-weight: bold;
 }
 
 .title::before {
