@@ -173,7 +173,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent;   
+    background: transparent;
+    gap: 8px;   
 }
 
 .template-icon__text {
@@ -484,9 +485,6 @@ body {
     }
 
     .section__image-template {
-        margin-left: auto;
-        margin-right: auto;
-        
         width: 531px;
         height: 307px;
         
