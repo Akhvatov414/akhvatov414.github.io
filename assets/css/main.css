@@ -86,11 +86,13 @@ body {
     padding-right: 16px;
 }
 
-.header-burger__mob {
+.header-burger{
     display: flex;
     justify-content: space-between;
-    padding-top: 23px;
     gap: 16px;
+    position: relative;
+    margin: 23px 24px;
+    margin-bottom: 57px;
 }
 
 .control-burger__mob{
@@ -99,13 +101,16 @@ body {
 
 .logo-icon {
     display: flex;
+    width: 97px;
+    height: 51px;
 }
 
 .search {
     margin-right: 24px;
 }
 
-.header-navbar {
+
+.header__navbar {
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
@@ -114,27 +119,49 @@ body {
     background: #FFFFFF;
 }
 
-.header-navbar__section-template {
+.header-navbar__list {
     display: flex;
     align-items: center;
     gap: 16px;
     margin-left: 10px;
 }
 
-.menu__main__logo .menu__icon {
-    margin-left: 16px;
+.header-navbar__list:nth-child(1){
+    flex-grow: 1;
+    position: relative;
 }
 
-.header__section-template_adaptive {
+.header-navbar__list:nth-child(2){
+    position: relative;
+}
+
+.header-navbar__list:nth-child(3){
+    position: relative;
+}
+
+.header-navbar__list:nth-child(2) {
     display: none;
 }
 
-.header-navbar__section-template:last-child {
+.header-navbar__list:nth-child(1)::after {
+    content: '';
+    height: 32px;
+    width: 2px;
+    background: #EAEAEA;
+    border-radius: 1px;
+}
+
+.header-navbar__list:last-child {
     margin-right: 16px;
 }
 
 .header__section {
     display: flex;
+}
+
+.header__section_burger {
+    display: flex;
+    gap: 16px;
 }
 
 .logo {
@@ -146,38 +173,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
-    background-color: #FF3E79;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    
+    background: transparent;   
 }
 
-.header-navbar__section-template:first-child::after{
-    content: '';
-    line-height: 32px;
-    height: 32px;
-    border-left: 2px solid #EAEAEA;
-}
-
-.header-title {
-    padding-top: 24px;
-}
-
-.header-title:not(.title) {
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0px -1px #D9FFF5;
-}
-
-
-.label-icon {
+.template-icon__text {
     display: none;
 }
 
+.template-icon__img {  
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+}
 
 .title {
+    display: flex;
+    box-shadow: 0px -1px #D9FFF5;
+    padding-top: 24px;
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
@@ -197,31 +213,43 @@ body {
 .title_burger {
     font-size: 16px; 
     line-height: 24px;
+    color: #7E7E82;
 }
 
 
 .navbar { 
     overflow: scroll;          
     white-space: nowrap;
-    flex-shrink: 0;
+    margin-left: 16px;
 }
 
 .navbar__list {
     display: flex;
-    padding: 0;
 }
 
-.navbar__list:first-child:not(ul){    
-    margin-left: 16px;
+.navbar__item {
+    display: flex;
+}
+
+.navbar__list_burger {
+    flex-direction: column;    
+    gap: 32px;
 }
 
 .navbar__link {
     color: #7E7E82;
     padding: 8px 16px;
-    gap: 16px;
     font-size: 16px;
     line-height: 24px;
     border: 2px solid transparent;
+}
+
+.navbar__link_burger {
+    color: #1B1C21;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
 }
 
 .navbar__link:hover {
@@ -229,10 +257,6 @@ body {
     border-radius: 6px;
     background: #FFFFFF;
     transition: 0.5s;
-}
-
-.navbar__link:link{
-    color: #7E7E82;
 }
 
 .section {
@@ -249,21 +273,13 @@ body {
     margin-bottom: 16px;
     flex-shrink: 0;
     gap: 16px;
+    flex-direction: column;
 }
 
 .section__paragraph {
-    margin: 0;
-    padding: 0;
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: 0.2px; 
-    gap: 16px;
-    /*   
-    padding-top: 24px;
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-bottom: 16px; 
-    */   
+    letter-spacing: 0.2px;
 }
 
 .section-button {    
@@ -275,12 +291,12 @@ body {
     background-color: transparent;
 }
 
-.section-button_text::before {
+.section-button::before {
     content: url('../img/button/icon.svg');    
 }
 
 
-.section-button_text {
+.section-button {
     display: flex;
     gap: 16px;
     font-size: 16px;
@@ -289,9 +305,7 @@ body {
 }
 
 .section__image-template {
-    display: inline-block;    
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
     width: 320px;
     height: 176px;
 }
@@ -318,18 +332,15 @@ body {
     .logo {
         border: 0;     
     }
-/*
-    .header__section-template:last-child::before{
-        content: '';
-        line-height: 32px;
-        height: 32px;
-        border-left: 2px solid #EAEAEA;
-    }
-*/
-    .header-navbar {
+
+    .header__navbar {
         display: flex;
         padding-top: 24px;
         padding-bottom: 24px;
+    }
+
+    .header-navbar__list:nth-child(2) {
+        display: flex;
     }
     
     .header__section-template_adaptive{
@@ -337,30 +348,31 @@ body {
         justify-content: flex-end;
     }
 
-    .header-navbar__section-template:first-child::after{
+    .header-navbar__list:first-child::after{
         display: none;
     }
 
-    .header-navbar__section-template:last-child::before{
+    .header-navbar__list:nth-child(1)::after{
         content: '';
-        line-height: 32px;
+        display: inline-block;
+        position: absolute;
+        left: 47px;
         height: 32px;
-        border-left: 2px solid #EAEAEA;
+        width: 2px;
+        background: #EAEAEA;
+        border-radius: 1px;
     }
 
-    .navbar__list:first-child:not(ul){    
+    .header-navbar__list:nth-child(3):before{
+        content: '';
+        height: 32px;
+        width: 2px;
+        background: #EAEAEA;
+        border-radius: 1px;
+    }
+
+    .navbar { 
         margin-left: 24px;
-    }
-
-    .logo-icon::before {
-        content: '';
-        position: relative;
-        top: 10px;
-        margin-right: 20px;
-        display: flex;
-        line-height: 32px;
-        height: 32px;
-        border-left: 2px solid #EAEAEA;
     }
     
     .menu__main__contacts {
@@ -380,7 +392,7 @@ body {
         flex-shrink: 0;
     }
 
-    .sidebare {
+    .section__container {
         flex-direction: column;
         gap: 16px;
     }
@@ -398,6 +410,10 @@ body {
         height: 208px;
         border-radius: 6px;
     }
+
+    .image {
+        border-radius: 6px;
+    }
 }
 
 @media (min-width: 1120px){
@@ -406,38 +422,25 @@ body {
         margin: 0 auto;
     }
 
-    .header-navbar{
+    .header__navbar{
         background-color: transparent;
+        justify-content: flex-end;
     }
 
-    .header-navbar__section-template:first-child{
+    .header-navbar__list:first-child{
         display: none;
     }
     
-    .header-navbar__section-template {
-        position: relative;
-        left: 715px;
-    }
 
-    .header-title {
+    .title {
         position: absolute;
         top: 24px;
         margin: 0;
         padding: 0;
     }
 
-    .header-title:not(.title) {
+    .title {
         box-shadow: none;
-    }
-
-
-    .menu__title {
-        padding-top: 42px;
-        padding-left: 1px;
-        padding-right: 25px;                
-        align-items: center;
-        box-shadow: none;
-        text-align: center;
     }
 
     .title{
@@ -446,38 +449,25 @@ body {
         letter-spacing: -0.6px;
         font-weight: bold;
         padding: 0;
-        margin: 0;/*
-        border-left: 3px solid #41F6D7;
-        padding-left: 30px;
-        */
+        margin: 0;
     }
 
     .navbar__list {
         flex-wrap: wrap;
     }
 
-    .navbar__list:first-child:not(ul){    
-        margin-left: 32px;
-    }
-    .navbar__list:last-child:not(ul){
+    .navbar { 
         margin-left: 32px;
     }
 
-    .menu__title__repair-menu {
-        display: flex;        
-        text-align: center;
-        align-items: center;
-        gap: 32px;
-    }
-
-    .label-icon {
+    .template-icon__text  {
         display: flex;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
     }
 
-    .section .sidebare{
+    .section__container {
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -499,6 +489,10 @@ body {
         
         width: 531px;
         height: 307px;
+        
+    }
+
+    .image {
         border-radius: 6px;
     }
 
