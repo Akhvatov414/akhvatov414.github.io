@@ -11,50 +11,65 @@
     <div class="burger">
         <header class="header">
             <div class="header-burger">
-                <div class="header__section header__section_burger">
-                    <button class="template-icon"><img class="icon" src="./assets/img/button/back.svg"></button>
-                    <a class="control-burger logo-icon" href="#home"><img class="logo_burger" src="./assets/img/logo.png" alt="ООО Рога и Копыта"></a>
-                </div>
-                <div class="header__section">
-                    <button class="template-icon"><img class="icon" src="./assets/img/button/search.svg"></button>
+                <div class="header-navbar__list">
+                    <button class="template-icon">
+                        <span class="template-icon__img">
+                            <img src="./assets/img/button/back.svg" alt="Назад">
+                        </span>
+                    </button>
+                    <a class="logo-icon" href="#"><img class="logo" src="./assets/img/logo.png" alt="ООО Рога и Копыта"></a>
+                    <button class="template-icon">
+                        <span class="template-icon__img">
+                            <img src="./assets/img/button/search.svg" alt="Поиск">
+                        </span>
+                    </button>
                 </div>
             </div>
         </header>
-        <div class="burger-title">        
-            <div class="title title_burger">
+        <section class="section section_burger">    
+            <h1 class="title title_burger">
                 Ремонт техники
-            </div>
-        </div>
-        <div>
+            </h1>
             <nav class="navbar">
                 <ul class="navbar__list navbar__list_burger">
-                    <li class="navbar__list navbar__list_burger"><a class="navbar__link navbar__link_burger" href="#">Услуги и сервисы</a></li>
-                    <li class="navbar__list navbar__list_burger"><a class="navbar__link navbar__link_burger" href="#">Корпоративным клиентам</a></li>
-                    <li class="navbar__list navbar__list_burger"><a class="navbar__link navbar__link_burger" href="#">Продавцам техники</a></li>
-                    <li class="navbar__list navbar__list_burger"><a class="navbar__link navbar__link_burger" href="#">Партнерам</a></li>
-                    <li class="navbar__list navbar__list_burger"><a class="navbar__link navbar__link_burger" href="#">Производителям</a></li>
-                    <li class="navbar__list navbar__list_burger"><a class="navbar__link navbar__link_burger" href="#">Наши сервисные центры</a></li>
-                    <li class="navbar__list navbar__list_burger"><a class="navbar__link navbar__link_burger" href="#">Контакты</a></li>
+                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Услуги и сервисы</a></li>
+                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Корпоративным клиентам</a></li>
+                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Продавцам техники</a></li>
+                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Партнерам</a></li>
+                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Производителям</a></li>
+                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Наши сервисные центры</a></li>
+                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
-        </div>
-        <div>
-            Футер
-            <div>
-                контакты
+        </section> 
+        <div class="footer">
+            <div class="header-navbar__list">
+                <button class="template-icon">
+                    <span class="template-icon__img">
+                        <img class="icon" src="./assets/img/button/call.svg" alt="Звонок">
+                    </span>
+                </button>
+                <button class="template-icon">
+                    <span class="template-icon__img">
+                        <img class="icon" src="./assets/img/button/chat.svg" alt="Чат">
+                    </span>
+                </button>
+                <button class="template-icon">
+                    <span class="template-icon__img">                                
+                        <img class="icon" src="./assets/img/button/profile.svg" alt="Профиль">
+                    </span>
+                </button>
             </div>
-            <div>
-                <a>емеил</a>
-                <b>8 800 890 8900</b>
+            <div class="footer__text-box">
+                <a class="footer__link">mail@cps.com</a>
+                <span class="footer__text footer__text_xl">8 800 890 8900</span>
             </div>
-            <div>
-                <ul>
-                    <li>RU</li>
-                    <li>EN</li>
-                    <li>CH</li>
-                </ul>
-            </div>
-        </div>
+            <ul class="footer__list">
+                <li class="footet__item">RU</li>
+                <li class="footet__item">EN</li>
+                <li class="footet__item">CH</li>
+            </ul>
+        </div>    
     </div>
 </body>
 </html>
