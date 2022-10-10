@@ -7,17 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Модуль 1.4</title>
 </head>
-<body>
+<body class="burger-body">
     <div class="burger">
         <header class="header">
             <div class="header-burger">
-                <div class="header-navbar__list">
+                <div class="burger-navbar__list">
                     <button class="template-icon">
                         <span class="template-icon__img">
                             <img src="./assets/img/button/back.svg" alt="Назад">
                         </span>
                     </button>
                     <a class="logo-icon" href="#"><img class="logo" src="./assets/img/logo.png" alt="ООО Рога и Копыта"></a>
+                    
+                </div>
+                <div class="burger-navbar__list">
                     <button class="template-icon">
                         <span class="template-icon__img">
                             <img src="./assets/img/button/search.svg" alt="Поиск">
@@ -30,20 +33,20 @@
             <h1 class="title title_burger">
                 Ремонт техники
             </h1>
-            <nav class="navbar">
+            <nav class="navbar navbar_burger">
                 <ul class="navbar__list navbar__list_burger">
-                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Услуги и сервисы</a></li>
-                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Корпоративным клиентам</a></li>
-                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Продавцам техники</a></li>
-                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Партнерам</a></li>
-                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Производителям</a></li>
-                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Наши сервисные центры</a></li>
-                    <li class="navbar__item navbar__list_burger"><a class="burger__link" href="#">Контакты</a></li>
+                    <li class="navbar__item"><a class="burger__link" href="#">Услуги и сервисы</a></li>
+                    <li class="navbar__item"><a class="burger__link" href="#">Корпоративным клиентам</a></li>
+                    <li class="navbar__item"><a class="burger__link" href="#">Продавцам техники</a></li>
+                    <li class="navbar__item"><a class="burger__link" href="#">Партнерам</a></li>
+                    <li class="navbar__item"><a class="burger__link" href="#">Производителям</a></li>
+                    <li class="navbar__item"><a class="burger__link" href="#">Наши сервисные центры</a></li>
+                    <li class="navbar__item"><a class="burger__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
         </section> 
         <div class="footer">
-            <div class="header-navbar__list">
+            <div class="burger-navbar__list">
                 <button class="template-icon">
                     <span class="template-icon__img">
                         <img class="icon" src="./assets/img/button/call.svg" alt="Звонок">
@@ -64,11 +67,20 @@
                 <a class="footer__link">mail@cps.com</a>
                 <span class="footer__text footer__text_xl">8 800 890 8900</span>
             </div>
-            <ul class="footer__list">
-                <li class="footet__item">RU</li>
-                <li class="footet__item">EN</li>
-                <li class="footet__item">CH</li>
-            </ul>
+            <div class="language-selector">
+                <div class="language-selector__item">
+                    <input type="radio" name="language" id="ru">
+                    <label for="ru">RU</label>
+                </div>
+                <div class="language-selector__item">
+                    <input type="radio" name="language" id="eng">
+                    <label for="eng">ENG</label>
+                </div>
+                <div class="language-selector__item">
+                    <input type="radio" name="language" id="ch">
+                    <label for="ch">CH</label>
+                </div>
+            </div>
         </div>    
     </div>
 </body>

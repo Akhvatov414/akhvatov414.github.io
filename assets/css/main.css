@@ -8,6 +8,18 @@
     font-style: normal;
 }
 
+@keyframes button-effect {
+    0% {
+        filter: opacity(100%)
+    }
+    50% {
+        filter: opacity(40%)
+    }
+    100% {
+        filter: opacity(100%)
+    }
+}
+
 /* Обнуление стилей */
 
 *{
@@ -70,27 +82,16 @@ body {
     width: 320px;    
 }
 
-
-/*
-.logo {
-    height: 40px;    
-    border-right: 2px solid #EAEAEA;
-    line-height: 32px;
-    padding-right: 16px;
-}
-*/
-
-.logo_burger {
-    height: 40px;
-    line-height: 32px;
-    padding-right: 16px;
+.burger-navbar__list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .header-burger{
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    position: relative;
     margin: 23px 24px;
     margin-bottom: 57px;
 }
@@ -188,7 +189,12 @@ body {
     background-color: #FF3E79;
     width: 40px;
     height: 40px;
-    border-radius: 50%; 
+    border-radius: 50%;    
+}
+
+.template-icon__img:hover{
+    animation-name: button-effect;
+    animation-duration: 0.6s; 
 }
 
 .title {
@@ -212,7 +218,8 @@ body {
 }
 
 .title_burger {
-    font-size: 16px; 
+    font-size: 16px;
+    position: relative; 
     line-height: 24px;
     color: #7E7E82;
     box-shadow: none;
@@ -223,6 +230,11 @@ body {
     overflow: scroll;          
     white-space: nowrap;
     margin-left: 16px;
+}
+
+.navbar_burger {
+    margin: 0;
+    margin-left: 24px;
 }
 
 .navbar__list {
@@ -269,6 +281,7 @@ body {
 .section_burger {
     display: flex;
     gap: 32px;
+    flex-direction: column;
 }
 
 .section__text-box{
@@ -343,7 +356,7 @@ body {
     margin-top: 16px;
 }
 
-.footer__list {
+.language-selector {
     display: flex;
     flex-direction: row;
     margin-top: 40px;
@@ -362,6 +375,22 @@ body {
     line-height: 32px;
     letter-spacing: -0.6px;
     font-weight: bold;    
+}
+
+.burger-navbar__list:nth-child(1) {
+    flex-grow: 1;
+}
+
+.language-selector__item label {
+    cursor: pointer;
+}
+
+.language-selector__item input{
+    display: none;
+}
+
+.language-selector__item input:checked ~ label {
+    color: #7E7E82;
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
@@ -417,7 +446,7 @@ body {
     .navbar { 
         margin-left: 24px;
     }
-    
+
     .menu__main__contacts {
         display: flex;
         gap: 16px;
@@ -425,6 +454,10 @@ body {
 
     .section {
         flex-direction: row;
+    }
+
+    .section_burger {
+        flex-direction: column;
     }
 
     .section__text-box {
@@ -549,5 +582,32 @@ body {
     .section-button  {    
         margin-left: 40px;
         gap: 16px;
+    }
+
+    .title_burger {
+        position: relative;
+    }
+
+    .section_burger {
+        flex-direction: column;
+    }
+
+    .title_burger {
+        font-size: 16px;
+        position: relative; 
+        line-height: 24px;
+        color: #7E7E82;
+        box-shadow: none;
+    }
+
+    .navbar__list_burger {
+        flex-direction: column;
+        gap: 32px;
+        /*margin-left: 24px;*/
+    }
+
+    .navbar_burger {
+        margin: 0;
+        margin-left: 24px;
     }
 }
