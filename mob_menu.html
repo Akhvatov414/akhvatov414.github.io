@@ -7,44 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Модуль 1.4</title>
 </head>
-<body class="burger-body">
-    <div class="burger">
-        <header class="header">
-            <div class="header-burger">
-                <div class="burger-navbar__list">
-                    <button class="template-icon">
-                        <span class="template-icon__img">
-                            <img src="./assets/img/button/back.svg" alt="Назад">
-                        </span>
-                    </button>
-                    <a class="logo-icon" href="#"><img class="logo" src="./assets/img/logo.png" alt="ООО Рога и Копыта"></a>
-                    
-                </div>
-                <div class="burger-navbar__list">
-                    <button class="template-icon">
-                        <span class="template-icon__img">
-                            <img src="./assets/img/button/search.svg" alt="Поиск">
-                        </span>
-                    </button>
-                </div>
+<body>
+    <aside class="burger">
+        <nav class="burger-navbar">
+            <div class="burger-navbar__list">
+                <button class="template-icon">
+                    <span class="template-icon__img">
+                        <img src="./assets/img/button/back.svg" alt="Назад">
+                    </span>
+                </button>
+                <a class="logo-icon" href="#"><img class="logo" src="./assets/img/logo.png" alt="ООО Рога и Копыта"></a>                    
             </div>
-        </header>
-        <section class="section section_burger">
-            <nav class="navbar navbar_burger">
-                <ul class="navbar__list navbar__list_burger">
-                    <li class="navbar__item"><a class="burger__link" href="#">Ремонт техники</a></li>
-                    <li class="navbar__item"><a class="burger__link" href="#">Услуги и сервисы</a></li>
-                    <li class="navbar__item"><a class="burger__link" href="#">Корпоративным клиентам</a></li>
-                    <li class="navbar__item"><a class="burger__link" href="#">Продавцам техники</a></li>
-                    <li class="navbar__item"><a class="burger__link" href="#">Партнерам</a></li>
-                    <li class="navbar__item"><a class="burger__link" href="#">Производителям</a></li>
-                    <li class="navbar__item"><a class="burger__link" href="#">Наши сервисные центры</a></li>
-                    <li class="navbar__item"><a class="burger__link" href="#">Контакты</a></li>
+            <div class="burger-navbar__list">
+                <button class="template-icon">
+                    <span class="template-icon__img">
+                        <img src="./assets/img/button/search.svg" alt="Поиск">
+                    </span>
+                </button>
+            </div>
+        </nav>
+        <div class="burger-menu">
+            <nav class="burger-menu__navbar">
+                <ul class="burger-menu__list">
+                    <li><a class="burger__link" href="#">Ремонт техники</a></li>
+                    <li><a class="burger__link" href="#">Услуги и сервисы</a></li>
+                    <li><a class="burger__link" href="#">Корпоративным клиентам</a></li>
+                    <li><a class="burger__link" href="#">Продавцам техники</a></li>
+                    <li><a class="burger__link" href="#">Партнерам</a></li>
+                    <li><a class="burger__link" href="#">Производителям</a></li>
+                    <li><a class="burger__link" href="#">Наши сервисные центры</a></li>
+                    <li><a class="burger__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
-        </section> 
-        <div class="footer">
-            <div class="burger-navbar__list">
+        </div> 
+        <div class="burger-footer">
+            <nav class="burger-navbar__list">
                 <button class="template-icon">
                     <span class="template-icon__img">
                         <img class="icon" src="./assets/img/button/call.svg" alt="Звонок">
@@ -60,12 +57,12 @@
                         <img class="icon" src="./assets/img/button/profile.svg" alt="Профиль">
                     </span>
                 </button>
-            </div>
+            </nav>
             <div class="footer__text-box">
-                <a class="footer__link">mail@cps.com</a>
-                <span class="footer__text footer__text_xl">8 800 890 8900</span>
-            </div>
-            <div class="language-selector">
+                <a class="footer__link" href="#">mail@cps.com</a>           
+                <a class="footer__link footer__link_xl" href="#">8 800 890 8900</a>
+            </div>            
+            <form class="language-selector">
                 <div class="language-selector__item">
                     <input type="radio" name="language" id="ru">
                     <label for="ru">RU</label>
@@ -78,8 +75,8 @@
                     <input type="radio" name="language" id="ch">
                     <label for="ch">CH</label>
                 </div>
-            </div>
+            </form>
         </div>    
-    </div>
+    </aside>
 </body>
 </html>
