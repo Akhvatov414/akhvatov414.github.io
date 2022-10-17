@@ -13,20 +13,21 @@
 </head>
 <body>
     
-    <div class="container">
+    <section class="container">
         <div class="swiper-box">
             <div class="swiper-box__header">
                 <h2>ремонт техники различных брендов</h2>
             </div>
-            <nav class="swiper-box__navbar swiper swiper-box__navbar_hidden" data-mobile="false">
+            <div class="swiper-box__navbar swiper swiper-box__navbar_hidden" data-mobile="false">
                 <ul class="swiper-wrapper swiper-box__list"></ul>
                 <div class="swiper-pagination"></div>                
-            </nav>
+            </div>
             <button class="swiper-box__button" onclick='showMoreButton'>
                 Показать все
             </button>
         </div>        
-    </div>
+    </section>
+
     <script src="index.js"> </script>
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';    

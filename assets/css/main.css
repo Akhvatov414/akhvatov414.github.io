@@ -463,17 +463,19 @@ input{
     justify-content: center;
     align-items: center;
 }
-
+/*
 .swiper-box__img {
     width: 25%;
 }
+*/
 
 .swiper-box__navbar { 
     overflow: scroll;          
     white-space: nowrap;
     padding-top: 16px;
     padding-bottom: 50px;
-    margin-left: 16px;
+    margin-left: 16px;    
+    transition: all 2s ease;
 }
 
 .swiper-box__button {
@@ -772,8 +774,10 @@ input{
     }
 
     .swiper-box__navbar_hidden {
+        transition: all 1s ease;
         max-height: 184px;
         overflow: hidden;
+        
     }
 }
 

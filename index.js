@@ -33,7 +33,7 @@ let swiperPaginationAdd = addElement('div', 'swiper-pagination');
 let addBrand = (brand) => {
     //Добавляем li для бренда. swiper__item сделать флексом
     let listItem = addElement('li', 'swiper-box__item');
-    let el = addElement('div', 'swiper-box__element')
+    let el = addElement('a', 'swiper-box__element')
     //Добавляем иконку бренда в тег li 
     let image = addElement('img', 'swiper-box__img');
     image.src = brand.imageUrl;
@@ -63,13 +63,7 @@ let showMoreButton = () => {
         swiperAdd.classList.remove('swiper-box__navbar_hidden');
         swiperAdd.classList.add('swiper-box__navbar_active');
         actionButton.textContent = 'Скрыть';
-    }
-    /*
-    if(swiperAdd.classList.contains('swiper-box__navbar_hidden')){
-        actionButton.textContent = 'Скрыть все';
-        swiperAdd.classList.add('swiper-box__navbar_hidden');
-    }
-    */       
+    }     
 }
 
 let hideButton = () => {
