@@ -474,8 +474,7 @@ input{
     white-space: nowrap;
     padding-top: 16px;
     padding-bottom: 50px;
-    margin-left: 16px;    
-    transition: all 2s ease;
+    margin-left: 16px;
 }
 
 .swiper-box__button {
@@ -625,13 +624,20 @@ input{
     .swiper-box__navbar {        
         padding-bottom: 0;
         margin-bottom: 24px;
+        max-height: 100%;
     }
 
     .swiper-box__navbar_hidden {
+        transition: max-height 1s;
         padding-bottom: 0;
         margin-bottom: 24px;
-        max-height: 184px;
         overflow: hidden;
+        max-height: 184px;
+    }
+
+    .swiper-box__navbar_active {
+        transition: max-height 1s;
+        max-height: 500px;
     }
 }
 
@@ -773,11 +779,15 @@ input{
         margin-bottom: 24px;
     }
 
-    .swiper-box__navbar_hidden {
-        transition: all 1s ease;
+    .swiper-box__navbar_hidden {        
+        transition: max-height 1s;        
         max-height: 184px;
-        overflow: hidden;
-        
+        overflow: hidden; 
+    }
+
+    .swiper-box__navbar_active {
+        transition: max-height 1s;
+        max-height: 500px;
     }
 }
 
