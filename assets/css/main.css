@@ -52,7 +52,7 @@ input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
+a, a:visited{text-decoration: none; cursor: pointer;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
@@ -417,19 +417,17 @@ input{
     transition-duration: 3s;
 }
 
+
 .swiper-box__header {
     display: flex;
     padding: 16px;
     box-shadow: 0px 1px #D9FFF5 inset;
-    background: linear-gradient(270deg, #FFFFFF 0%,#F8F8F8  98.61%);
-}
-
-.swiper-box__header h2 {
     size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     text-transform: uppercase;
     color: #7E7E82;
+    background: linear-gradient(270deg, #FFFFFF 0%,#F8F8F8  98.61%);
 }
 
 .swiper-box__list {
