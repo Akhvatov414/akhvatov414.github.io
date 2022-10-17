@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="swiper-box">
+            <div class="swiper-box__header">
+                <h2>ремонт техники различных брендов</h2>
+            </div>
+            <nav class="swiper-box__navbar swiper swiper-box__navbar_hidden" data-mobile="false">
+                <ul class="swiper-wrapper swiper-box__list"></ul>
+                <div class="swiper-pagination"></div>                
+            </nav>
+            <button class="swiper-box__button" onclick='showMoreButton'>
+                Показать все
+            </button>
+        </div>        
+    </div>
+    <script src="index.js"> </script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';    
+        
+        const mySlider = document.querySelector('.swiper-box__navbar');
+
+        let swiper;
+
+        function mobileSlider() {
+            if (window.innerWidth < 768 && mySlider.dataset.mobile == "false") {
+                swiper = new Swiper ( mySlider, {
+                    slidesPerView: 1.25,
+                    spaceBetween: 16,
+                    slideClass: 'swiper-box__item',
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
+                        clickable: true
+                    },
+                });
+                mySlider.dataset.mobile = 'true';
+            }
+            if (window.innerWidth >=768) {
+                mySlider.dataset.mobile = 'false';
+                if (mySlider.classList.contains('swiper-initialized')){
+                    swiper.destroy();
+                }
+            }
+        }
+
+        mobileSlider();
+
+        window.addEventListener('resize', () => {
+            mobileSlider();
+        });
+
+
+        /*const pageWidth = document.documentElement.scrollWidth;
+        window.addEventListener("resize", () => {
+            if (pageWidth < 769) {
+                console.log('Мобильный размер');
+            } else {
+                console.log('не Мобильный размер');
+            }
+            //console.log(`Ширина окна = ${pageWidth}`)
+        })
+        */
+        
+        /*
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            slidesPerView: 1.25,
+            spaceBetween: 16,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+
+        });
+        */
+      </script>
+</body>
+</html>
