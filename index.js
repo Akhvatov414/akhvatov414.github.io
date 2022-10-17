@@ -89,4 +89,3 @@ let workButton = () => {
 }
 
 actionButton.addEventListener('click', workButton);
-//actionButton.addEventListener('click', hideButton);
