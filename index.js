@@ -38,6 +38,7 @@ let addBrand = (brand) => {
     let image = addElement('img', 'swiper-box__img');
     image.src = brand.imageUrl;
     image.alt = brand.textAlt;
+    listItem.href = '#';
     //listItem.appendChild(el);
     //listItem.classList.add('swiper-slide')
     listItem.appendChild(image);
