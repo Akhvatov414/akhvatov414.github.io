@@ -417,6 +417,9 @@ input{
     transition-duration: 3s;
 }
 
+.swiper-box {
+    gap: 16px;
+}
 
 .swiper-box__header {
     display: flex;
@@ -432,19 +435,20 @@ input{
 
 .swiper-box__list {
     display: flex;
+    flex-wrap: nowrap;
     /*gap: 24px;*/
 }
-
+/*
 .swiper-box__item {
     display: flex;
 }
-
-.swiper-box__element {
+*/
+.swiper-box__item {
     display: flex;    
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    width: 240px;
+    min-width: 240px;
     height: 72px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -590,6 +594,7 @@ input{
 
     .swiper-box__list {
         flex-wrap: wrap;
+        gap: 16px;
     }
 
     .swiper-box__element {
@@ -598,10 +603,6 @@ input{
     
     .swiper-pagination {
         display: none;
-    }
-
-    .swiper-box__list {
-        gap: 24px;
     }
 
     .swiper-box__button {

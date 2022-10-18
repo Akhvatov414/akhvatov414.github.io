@@ -32,20 +32,20 @@ let swiperPaginationAdd = addElement('div', 'swiper-pagination');
 
 let addBrand = (brand) => {
     //Добавляем li для бренда. swiper__item сделать флексом
-    let listItem = addElement('li', 'swiper-box__item');
+    let listItem = addElement('a', 'swiper-box__item');
     let el = addElement('a', 'swiper-box__element')
     //Добавляем иконку бренда в тег li 
     let image = addElement('img', 'swiper-box__img');
     image.src = brand.imageUrl;
     image.alt = brand.textAlt;
-    listItem.appendChild(el);
+    //listItem.appendChild(el);
     //listItem.classList.add('swiper-slide')
-    el.appendChild(image);
+    listItem.appendChild(image);
     //Добавляем кнопку в контейнер с иконкой бренда
     let buttonItem = addElement('div', 'swiper-box__btn');
     let icon = addElement('img', 'icon');
     icon.src = './assets/img/button/dropdown.svg'
-    el.appendChild(buttonItem);
+    listItem.appendChild(buttonItem);
     buttonItem.appendChild(icon);
     
     return listItem;
