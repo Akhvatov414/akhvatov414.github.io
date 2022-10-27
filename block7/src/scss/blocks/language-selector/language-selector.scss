@@ -1,0 +1,14 @@
+.language-selector{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+
+    input{
+        position: absolute;
+        visibility: hidden;
+    }
+    
+     input:checked ~ label {
+        color: #7E7E82;
+    }
+}

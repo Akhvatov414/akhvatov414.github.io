@@ -1,0 +1,19 @@
+.burger-navbar {
+    &__list{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: space-between;
+        
+        & .logo-icon{
+            flex-grow: 1;
+        }
+
+        @media (min-width: 1440px){
+            & .template-icon:first-child{
+                display: none;
+            }
+        }
+    }    
+}

@@ -1,0 +1,16 @@
+.burger-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &__list {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    &__navbar {
+        flex-direction: column;
+        flex-grow: 1; 
+    }
+}

@@ -1,0 +1,31 @@
+.title {
+    display: flex;
+    box-shadow: 0px -1px #D9FFF5;
+    padding-top: 24px;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+
+    &::before {
+        content: '';
+        line-height: 40px;
+        border-bottom: 4px solid transparent;
+        border-top: 4px solid transparent;
+        border-left: 4px solid #41F6D7;
+        border-radius: 2px;
+        margin-right: 16px;  
+    }
+
+    @media (min-width: 1120px){
+        position: absolute;
+        top: 24px;
+        margin: 0;
+        padding: 0;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+        font-weight: bold;
+        box-shadow: none;
+    }
+}

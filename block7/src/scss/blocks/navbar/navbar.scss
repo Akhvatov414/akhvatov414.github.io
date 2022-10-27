@@ -1,0 +1,42 @@
+.navbar { 
+    overflow: scroll;          
+    white-space: nowrap;
+    margin-left: 16px;
+
+    &__list {
+        display: flex;
+        @media (min-width: 1120px){
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        display: flex;
+        @media (min-width: 1120px){
+            flex-wrap: wrap;
+        }
+    }
+
+    &__link {
+        color: #7E7E82;
+        padding: 8px 16px;
+        font-size: 16px;
+        line-height: 24px;
+        border: 2px solid transparent;
+        
+        &:hover{
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+            background: #FFFFFF;
+            transition: 0.5s; 
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1119px) {
+        margin-left: 24px;
+    }
+    
+    @media(min-width: 1120px) {
+        margin-left: 32px;
+    }
+}

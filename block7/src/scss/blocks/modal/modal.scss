@@ -1,0 +1,14 @@
+.modal {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.96;
+    z-index: 100;
+
+    &_active {
+        position: fixed;
+        display: block;
+    }   
+}

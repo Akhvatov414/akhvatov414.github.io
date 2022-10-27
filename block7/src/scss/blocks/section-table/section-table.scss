@@ -1,0 +1,118 @@
+.section-table {
+    border-radius: 5px;
+    font-weight: normal;
+    //border: 1px solid; Потестировать закругление перед сдачей
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 8px;
+    padding: 16px;
+    min-width: 0;
+    // &__body{
+    //     background-color: #FFFFFF;
+    //     border-radius: 6px;
+    // }
+
+    @media (max-width: 767px){        
+        display: flex;
+        flex-direction: row;
+    }
+
+    @media (min-width: 768px) and (max-width: 1119px) {
+        max-width: 720px;
+    }
+
+    &__row{
+        background-color: #FFFFFF;
+        border-radius: 6px;
+        border-bottom: 1px solid #EAEAEA;
+
+        
+        
+        @media (max-width: 767px){ 
+            display: flex;
+            padding: 6px;
+            flex-direction: row;
+            flex-wrap: wrap;           
+            position: relative;
+            max-width: 260px;
+            min-width: 260px;
+            max-height: 200px;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1119px) {
+            background-color: #FFFFFF;
+        }
+
+        @media (min-width: 1120px){
+            background-color: transparent;
+        }
+
+        &:last-child{
+            border: none;
+        }
+    }
+
+    &__body {
+        padding-bottom: 50px;
+
+        @media (min-width: 768px) and (max-width: 1119px) {
+        }
+
+        @media (min-width: 1120px){
+            background-color: #FFFFFF;
+        }
+    }
+
+    &__cell{
+        vertical-align: middle;
+        padding: 16px 0px;
+        font-size: 14px;
+        color: #1B1C21;
+        border: none;
+
+        @media(max-width: 767px){
+            margin: 0 -1px -1px 0;
+            padding-top: 35px;
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    &__head {
+        text-align: left;
+        padding: 16px;
+        font-size: 14px;
+        color: #7E7E82;
+        mix-blend-mode: normal;
+        opacity: 0.72;
+        border: none;
+        line-height: 16px;
+
+        @media (max-width: 767px){
+            display: none;
+        }
+    }
+
+    &__span{
+        display: none;
+        font-size: 14px;      
+        padding: 5px 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #7E7E82;
+        mix-blend-mode: normal;
+        opacity: 0.72; 
+
+        @media(max-width: 767px){
+            display: block;
+            padding: 0;
+        }
+    }
+
+    &__header {
+        padding: 16px 0px;
+    }   
+}

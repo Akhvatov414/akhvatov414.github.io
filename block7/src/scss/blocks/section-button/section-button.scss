@@ -1,0 +1,107 @@
+.section-button {
+    display: flex;
+    gap: 16px;
+    border: none;
+    align-items: center;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bolder;
+
+    &:not(&_commercial):not(&_order):not(&_send):before {
+        content: url('../img/button/icon.svg');    
+    }
+
+    @media (min-width: 768px) and (max-width: 1119px) {
+    }
+
+    @media (min-width: 1120px) {
+        gap: 16px;
+    }
+
+    &_commercial {
+        margin-left: 16px;
+        letter-spacing: -0.2;
+    }
+
+    &_commercial::after {
+        content: url('../img/button/dropdown.svg');
+        scale: 0.8;
+    }
+
+    &_order {
+        justify-content: center;
+        width: 119px;
+        height: 32px;
+        background: #FF3E79;
+        border-radius: 16px;
+        color: white;
+
+        &:hover {
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+
+        @media(max-width: 767px){
+            position: absolute;
+            right: 16px;
+            bottom: 64px;
+            z-index: 100;
+        }
+        
+        &::after {
+            content: url('../img/button/send.svg');
+            scale: 0.8;
+        }
+    }
+
+    &_send {
+        justify-content: center;
+        position: relative;
+        width: 119px;
+        height: 32px;
+        background: #FF3E79;
+        border-radius: 16px;
+        color: white;
+        left: 170px;
+
+        &:hover {
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+        
+        &::after {
+            content: url('../img/button/send.svg');
+            scale: 0.8;
+        }
+    }
+
+    &_types {
+        display: none;
+        @media (min-width: 768px) and (max-width: 1119px) {
+            display: flex;
+        }
+    
+        @media (min-width: 1120px) {
+            display: flex;
+        }
+    }
+
+    &_brand {
+        display: none;
+        @media (min-width: 768px) and (max-width: 1119px) {
+            display: flex;
+        }
+        
+        @media (min-width: 1120px) {
+            display: flex;
+        }
+    }
+
+    &_active{
+        &::before{
+            transform: rotate(180deg);
+            transition: all 0.3 ease;
+        }
+    }
+}

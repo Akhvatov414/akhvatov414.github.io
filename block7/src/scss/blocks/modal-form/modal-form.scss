@@ -1,0 +1,44 @@
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__button:first-child {
+        display: flex;
+        justify-content: left;
+        @media(min-width: 1440px){
+            position: absolute;
+            left: -64px;
+        }        
+    }
+
+    &__button:last-child {
+        
+        @media(min-width: 1440px){
+            position: relative;
+            left: 279px;
+        }    
+    }
+    
+    &__title {
+        display: flex;
+        position: relative;
+        left: -20px;
+        padding-top: 24px;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+        font-weight: bold;
+        
+    
+        &::before {
+            content: '';
+            line-height: 40px;
+            border-bottom: 4px solid transparent;
+            border-top: 4px solid transparent;
+            border-left: 4px solid #41F6D7;
+            border-radius: 2px;
+            margin-right: 16px;  
+        }
+    }
+}

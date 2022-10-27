@@ -1,0 +1,44 @@
+@import './blocks/reset.scss';
+@import './blocks/container/container.scss';
+@import './blocks/header-navbar/header-navbar.scss';
+@import './blocks/template-icon/template-icon.scss';
+@import './blocks/title/title.scss';
+@import './blocks/navbar/navbar.scss';
+@import './blocks/section/section.scss';
+@import './blocks/section-button/section-button.scss';
+@import './blocks/image/image.scss';
+@import './blocks/swiper/swiper.scss';
+@import './blocks/section-table/section-table.scss';
+@import './blocks/footer/footer.scss';
+@import './blocks/burger/burger.scss';
+@import './blocks/burger-footer/burger-footer.scss';
+@import './blocks/burger-menu/burger-menu.scss';
+@import './blocks/burger-navbar/burger-navbar.scss';
+@import './blocks/language-selector/language-selector.scss';
+@import './blocks/modal/modal.scss';
+@import './blocks/aside/aside.scss';
+@import './blocks/modal-form/modal-form.scss';
+@import './blocks/template-form/template-form.scss';
+
+$bgColor: #24292e;
+$text: #fff;
+
+@font-face {
+  font-family: 'TTLakes-Regular';
+  src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: 'TT Lakes Regular';
+  background-color: #F8F8F8;
+}
+
+.modal-active {
+  overflow: hidden;
+}
+
+.swiper-pagination {
+  max-width: 300px;
+}
