@@ -22,42 +22,6 @@
 
 /* Обнуление стилей */
 
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
-}
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-/*nav,footer,header,aside{display: block;}*/
-
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-input,button,textarea{font-family:inherit;}
-
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none; cursor: pointer;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 /* Мобильная версия */
 
@@ -111,7 +75,7 @@ body {
 }
 
 
-.header__navbar {
+.header-navbar {
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
@@ -422,7 +386,6 @@ input{
 }
 
 .swiper-box__header {
-    display: flex;
     padding: 16px;
     box-shadow: 0px 1px #D9FFF5 inset;
     size: 16px;
@@ -471,12 +434,12 @@ input{
 }
 */
 
-.swiper-box__navbar { 
-    overflow: scroll;          
+.swiper-box__navbar {        
     white-space: nowrap;
     padding-top: 16px;
     padding-bottom: 50px;
     margin-left: 16px;
+    max-height: 500px;
 }
 
 .swiper-box__button {
@@ -506,7 +469,7 @@ input{
         border: 0;     
     }
 
-    .header__navbar {
+    .header-navbar {
         display: flex;
         padding-top: 24px;
         padding-bottom: 24px;
@@ -623,7 +586,8 @@ input{
     .swiper-box__navbar {        
         padding-bottom: 0;
         margin-bottom: 24px;
-        max-height: 100%;
+        max-height: 500px;
+        transition: max-height 1s;
     }
 
     .swiper-box__navbar_hidden {
@@ -646,7 +610,7 @@ input{
         margin: 0 auto;
     }
 
-    .header__navbar{
+    .header-navbar{
         background-color: transparent;
         justify-content: flex-end;
     }
@@ -776,6 +740,8 @@ input{
     .swiper-box__navbar {        
         padding-bottom: 0;
         margin-bottom: 24px;
+        max-height: 500px;
+        transition: max-height 1s;
     }
 
     .swiper-box__navbar_hidden {        

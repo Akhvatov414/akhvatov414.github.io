@@ -19,7 +19,96 @@
                 ремонт техники различных брендов
             </h2>
             <div class="swiper-box__navbar swiper swiper-box__navbar_hidden" data-mobile="false">
-                <ul class="swiper-wrapper swiper-box__list"></ul>
+                <ul class="swiper-wrapper swiper-box__list">
+                    <li class="swiper__item">
+                        <a href="#" class="swiper-box__item">
+                            <img src="./assets/img/brands/lenovo.svg" alt="Brand" class="swiper-box__img">
+                            <div class="swiper-box__btn">
+                                <img src="./assets/img/button/dropdown.svg" alt="" class="icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper__item">
+                        <a href="#" class="swiper-box__item">
+                            <img src="./assets/img/brands/samsung.svg" alt="Brand" class="swiper-box__img">
+                            <div class="swiper-box__btn">
+                                <img src="./assets/img/button/dropdown.svg" alt="" class="icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper__item">
+                        <a href="#" class="swiper-box__item">
+                            <img src="./assets/img/brands/apple.svg" alt="Brand" class="swiper-box__img">
+                            <div class="swiper-box__btn">
+                                <img src="./assets/img/button/dropdown.svg" alt="" class="icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper__item">
+                        <a href="#" class="swiper-box__item">
+                            <img src="./assets/img/brands/viewsonic.svg" alt="Brand" class="swiper-box__img">
+                            <div class="swiper-box__btn">
+                                <img src="./assets/img/button/dropdown.svg" alt="" class="icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper__item">
+                        <a href="#" class="swiper-box__item">
+                            <img src="./assets/img/brands/bosch.svg" alt="Brand" class="swiper-box__img">
+                            <div class="swiper-box__btn">
+                                <img src="./assets/img/button/dropdown.svg" alt="" class="icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper__item">
+                        <a href="#" class="swiper-box__item">
+                            <img src="./assets/img/brands/hp.svg" alt="Brand" class="swiper-box__img">
+                            <div class="swiper-box__btn">
+                                <img src="./assets/img/button/dropdown.svg" alt="" class="icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper__item">
+                        <a href="#" class="swiper-box__item">
+                            <img src="./assets/img/brands/acer.svg" alt="Brand" class="swiper-box__img">
+                            <div class="swiper-box__btn">
+                                <img src="./assets/img/button/dropdown.svg" alt="" class="icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper__item">
+                        <a href="#" class="swiper-box__item">
+                            <img src="./assets/img/brands/sony.svg" alt="Brand" class="swiper-box__img">
+                            <div class="swiper-box__btn">
+                                <img src="./assets/img/button/dropdown.svg" alt="" class="icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper__item">
+                        <a href="#" class="swiper-box__item">
+                            <img src="./assets/img/brands/lenovo.svg" alt="Brand" class="swiper-box__img">
+                            <div class="swiper-box__btn">
+                                <img src="./assets/img/button/dropdown.svg" alt="" class="icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper__item">
+                        <a href="#" class="swiper-box__item">
+                            <img src="./assets/img/brands/samsung.svg" alt="Brand" class="swiper-box__img">
+                            <div class="swiper-box__btn">
+                                <img src="./assets/img/button/dropdown.svg" alt="" class="icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper__item">
+                        <a href="#" class="swiper-box__item">
+                            <img src="./assets/img/brands/apple.svg" alt="Brand" class="swiper-box__img">
+                            <div class="swiper-box__btn">
+                                <img src="./assets/img/button/dropdown.svg" alt="" class="icon">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
                 <div class="swiper-pagination"></div>                
             </div>
             <button class="swiper-box__button" onclick='showMoreButton'>
@@ -29,7 +118,7 @@
     </section>
 
     <script src="index.js"> </script>
-    <script type="module">
+    <script type="module">   
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';    
         
         const mySlider = document.querySelector('.swiper-box__navbar');
@@ -41,11 +130,11 @@
                 swiper = new Swiper ( mySlider, {
                     slidesPerView: 1.25,
                     spaceBetween: 16,
-                    slideClass: 'swiper-box__item',
+                    slideClass: 'swiper__item',
                     pagination: {
                         el: '.swiper-pagination',
                         type: 'bullets',
-                        clickable: true
+                        clickable: true,
                     },
                 });
                 mySlider.dataset.mobile = 'true';
@@ -63,6 +152,7 @@
         window.addEventListener('resize', () => {
             mobileSlider();
         });
+        
       </script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+
+
+
 let brandArr = [
     {name: 'Lenovo', imageUrl: './assets/img/brands/lenovo.svg', textAlt: 'Леново'},
     {name: 'Samsung', imageUrl: './assets/img/brands/samsung.svg', textAlt: 'Самсунг'},
@@ -20,7 +23,7 @@ let swiperAdd = document.querySelector('.swiper-box__navbar');
 let swiperWrapperAdd = document.querySelector('.swiper-box__list');
 let actionButton = document.querySelector('.swiper-box__button');
 
-
+/*
 let addElement = (tagName, className) => {
     let el = document.createElement(tagName);
     el.classList.add(className);
@@ -58,6 +61,9 @@ for (let i = 0; i < brandArr.length; i++) {
     let brandItem = addBrand(brandArr[i]);
     brandList.appendChild(brandItem);
 }
+*/
+
+
 
 let showMoreButton = () => {
     if(swiperAdd.classList.contains('swiper-box__navbar_hidden')) {
@@ -76,11 +82,14 @@ let hideButton = () => {
 }
 
 let workButton = () => {
+    /*
         if(swiperAdd.classList.contains('swiper-box__navbar_hidden')){
             showMoreButton();
         } else {
             hideButton();
         }
+    */
+    swiperAdd.classList.toggle('swiper-box__navbar_hidden')
 }
 
 actionButton.addEventListener('click', workButton);
