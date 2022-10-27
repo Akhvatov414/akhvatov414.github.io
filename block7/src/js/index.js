@@ -20,6 +20,7 @@ let closeButton = document.querySelectorAll('.template-icon_close');
 
 let openModal = () => {
     modal.classList.add('modal_active');
+    document.body.classList.add('modal-active');
 }
 
 let closeModal = () => {
@@ -27,6 +28,7 @@ let closeModal = () => {
     asideChat.classList.remove('aside_active');
     asideCall.classList.remove('aside_active');
     asideBurger.classList.remove('burger_active');
+    document.body.classList.remove('modal-active');
 }
 
 let openCallWindow = () => {
