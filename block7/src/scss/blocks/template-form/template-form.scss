@@ -19,11 +19,19 @@
         @media (min-width: 320px) and (max-width: 1119px){
             width: 288px
         }
+
+        &_message {
+            resize: none;
+
+            @media (min-width: 1120px) {
+                height: 118px;
+            }
+        }
     }
     
     &__text{
         @media (min-width: 320px) and (max-width: 1119px){
-            width: 288px
+            width: 288px;
         }
     }
 

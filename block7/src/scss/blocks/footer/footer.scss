@@ -9,6 +9,7 @@
     text-align: center;
     align-items: center;
     margin-bottom: 25px;
+    margin-top: 40px;
 
 
     @media (min-width: 768px) and (max-width: 1119px) {
@@ -24,9 +25,12 @@
     }
 
     &__text {
+        display: inline-block;
         font-size: 14px;
         line-height: 16px;
         color: #7E7E82;
+
+        margin-top: 16px;
 
         &:first-child{
             width: 218px;

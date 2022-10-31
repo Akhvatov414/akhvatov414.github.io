@@ -7,6 +7,13 @@
 
     &__text {
         display: none;
+
+        @media (min-width: 1120px){
+            display: flex;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+        }
     }
 
     &__img {

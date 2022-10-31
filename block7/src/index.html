@@ -72,7 +72,8 @@
                 <li class="navbar__item"><a class="navbar__link" href="#">Отзывы</a></li> 
             </ul>
         </nav> 
-        <main>      
+        <div class="wrapper"> 
+        <main class="main-content">               
             <section class="section">                    
                 <div class="section__container">
                     <div class="section__text-box">                   
@@ -304,13 +305,15 @@
                     Получить коммерческое предложение
                 </button> 
         </section>
-        <footer class="footer">
-            <div class="footer__text">© 2019 CPS
-Разработано командой Apesong</div>
-            <div class="footer__text">Политика конфиденциальности</div>
-            <div class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</div>
-        </footer>
+  
         </main>
+        <footer class="footer">
+            <span class="footer__text">© 2019 CPS
+Разработано командой Apesong</span>
+            <span class="footer__text">Политика конфиденциальности</span>
+            <span class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</span>
+        </footer>
+    </div> 
         <aside class="burger">
             <nav class="burger-navbar">
                 <div class="burger-navbar__list">
@@ -384,12 +387,12 @@
                         <img src="./img/button/back.svg" alt="Меню">
                     </span>
                 </button>
-                <h1 class="modal-form__title">Обратная связь</h1>
+                <h2 class="modal-form__title">Обратная связь</h2>
                 <form class="template-form">
                     <input class="template-form__input" type="text" placeholder="Имя">
                     <input class="template-form__input" type="text" placeholder="Телефон">
                     <input class="template-form__input" type="email" placeholder="Электронная почта">
-                    <input class="template-form__input feedback-form__input_message" type="text" placeholder="Сообщение">
+                    <textarea class="template-form__input template-form__input_message" type="text" placeholder="Сообщение"></textarea>
                     <div class="template-form__text">Нажимая “отправить”, вы даете согласие на <a href="#" class="template-form__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="template-form__link">политикой конфиденциальности</a></div>
                 </form>
                 <button class="modal-form__button section-button section-button_send">Отправить</button>
@@ -402,7 +405,7 @@
                         <img src="./img/button/back.svg" alt="Меню">
                     </span>
                 </button>
-                <h1 class="modal-form__title">Заказать звонок</h1>
+                <h2 class="modal-form__title">Заказать звонок</h2>
                 <form class="template-form">
                     <input class="template-form__input" type="tel" placeholder="Телефон">
                     <div class="template-form__text">Нажимая “отправить”, вы даете согласие на <a href="#" class="template-form__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="template-form__link">политикой конфиденциальности</a></div>
