@@ -93,57 +93,79 @@ const sliderTypes = document.querySelector('.swiper_types');
 const sliderPrice = document.querySelector('.section-table');
 let wrapper = document.querySelector('.section-table__body');
 
-let swiper = new Swiper ( mySlider, {
-    slidesPerView: 1,
-    width: 240,
-    spaceBetween: 16,
-    slideClass: 'swiper__item',
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-    },
-    breakpoints: {
-        768: {
-            enabled: false
-        }
-    },
-});
+let initSwiper = (slider, sliderItem) => {
+    let swiper = new Swiper ( slider, {
+        slidesPerView: 1,
+        width: 240,
+        spaceBetween: 16,
+        slideClass: sliderItem,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                enabled: false
+            }
+        },
+    });
+}
 
-let swiperTypes = new Swiper ( sliderTypes, {
-    slidesPerView: 1,
-    width: 240,
-    spaceBetween: 16,
-    slideClass: 'swiper__item',
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-    },
-    breakpoints: {
-        768: {
-            enabled: false
-        }
-    },
-});
+initSwiper(mySlider, 'swiper__item');
+initSwiper(sliderTypes, 'swiper__item');
+initSwiper(sliderPrice, 'section-table__row');
 
-let swiperPrice = new Swiper ( sliderPrice, {
-    slidesPerView: 1,
-    width: 285,
-    spaceBetween: 16,
-    slideClass: 'section-table__row',
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-    },
-    breakpoints: {
-        768: {
-            enabled: false,
-            disabledClass: 'swiper-wrapper'
-        }
-    },
-});
+// let swiper = new Swiper ( mySlider, {
+//     slidesPerView: 1,
+//     width: 240,
+//     spaceBetween: 16,
+//     slideClass: 'swiper__item',
+//     pagination: {
+//         el: '.swiper-pagination',
+//         type: 'bullets',
+//         clickable: true,
+//     },
+//     breakpoints: {
+//         768: {
+//             enabled: false
+//         }
+//     },
+// });
+
+// let swiperTypes = new Swiper ( sliderTypes, {
+//     slidesPerView: 1,
+//     width: 240,
+//     spaceBetween: 16,
+//     slideClass: 'swiper__item',
+//     pagination: {
+//         el: '.swiper-pagination',
+//         type: 'bullets',
+//         clickable: true,
+//     },
+//     breakpoints: {
+//         768: {
+//             enabled: false
+//         }
+//     },
+// });
+
+// let swiperPrice = new Swiper ( sliderPrice, {
+//     slidesPerView: 1,
+//     width: 290,
+//     spaceBetween: 16,
+//     slideClass: 'section-table__row',
+//     pagination: {
+//         el: '.swiper-pagination',
+//         type: 'bullets',
+//         clickable: true,
+//     },
+//     breakpoints: {
+//         768: {
+//             enabled: false,
+//         }
+//     },
+// });
 
 function mobileSlider() {
     /*

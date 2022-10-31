@@ -8,6 +8,7 @@
     margin-left: 8px;
     padding: 16px;
     min-width: 0;
+    position: relative;
     // &__body{
     //     background-color: #FFFFFF;
     //     border-radius: 6px;
@@ -26,7 +27,6 @@
         background-color: #FFFFFF;
         border-radius: 6px;
         border-bottom: 1px solid #EAEAEA;
-
         
         
         @media (max-width: 767px){ 
@@ -66,17 +66,24 @@
     }
 
     &__cell{
+        position: relative;
         vertical-align: middle;
         padding: 16px 0px;
         font-size: 14px;
         color: #1B1C21;
         border: none;
+        box-sizing: border-box;
 
         @media(max-width: 767px){
             margin: 0 -1px -1px 0;
-            padding-top: 35px;
+            padding-top: 30px;
             position: relative;
             width: 100%;
+
+            &_btn{
+                position: absolute;
+                bottom: 35px;
+            }
         }
     }
 
