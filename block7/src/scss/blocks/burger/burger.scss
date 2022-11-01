@@ -23,7 +23,8 @@
         width: 320px;
         max-width: 320px;
         height: 100vh;
-        position: fixed;
+        position: absolute;
+        transform: translateX(-320px);        
         padding: 20px;
         gap: 32px;
         transition: all 0.2s ease;
@@ -31,6 +32,11 @@
         top: 0px;
         z-index: 99;
         background: #FFFFFF;
+    }
+
+    @media (min-width: 1441px) and (max-width: 1880px){
+        width: 280px;
+        transform: translateX(-280px);  
     }
 
     &__link {
