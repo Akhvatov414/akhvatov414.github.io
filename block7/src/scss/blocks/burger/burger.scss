@@ -1,11 +1,10 @@
 .burger {
-    position: absolute;
+    position: fixed;
     z-index: 101;
     flex-direction: column;
     width: 320px;
     max-width: 320px;
     height: 100vh;
-    position: fixed;
     padding: 20px;
     gap: 32px;
     transition: all 0.6s ease;
@@ -17,14 +16,19 @@
         box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
     }
 
+    @media (min-width: 1120px) and (max-width: 1550px){    
+        width: 1120px;
+        margin: 0 auto;
+    }
+
     @media (min-width: 1440px){
         display: flex;
         flex-direction: column;
         width: 320px;
         max-width: 320px;
         height: 100vh;
-        position: absolute;
-        transform: translateX(-320px);        
+        position: fixed;
+        //transform: translateX(-320px);        
         padding: 20px;
         gap: 32px;
         transition: all 0.2s ease;
@@ -34,10 +38,10 @@
         background: #FFFFFF;
     }
 
-    @media (min-width: 1441px) and (max-width: 1880px){
-        width: 280px;
-        transform: translateX(-280px);  
-    }
+    // @media (min-width: 1441px) and (max-width: 1880px){
+    //     width: 280px;
+    //     transform: translateX(-280px);  
+    // }
 
     &__link {
         color: #1B1C21;
