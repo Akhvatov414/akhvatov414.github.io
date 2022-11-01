@@ -93,10 +93,10 @@ const sliderTypes = document.querySelector('.swiper_types');
 const sliderPrice = document.querySelector('.section-table');
 let wrapper = document.querySelector('.section-table__body');
 
-let initSwiper = (slider, sliderItem) => {
+let initSwiper = (slider, sliderItem, sliderWidth) => {
     let swiper = new Swiper ( slider, {
         slidesPerView: 1,
-        width: 240,
+        width: sliderWidth,
         spaceBetween: 16,
         slideClass: sliderItem,
         pagination: {
@@ -110,11 +110,29 @@ let initSwiper = (slider, sliderItem) => {
             }
         },
     });
+    if (window.innerWidth >=768) {
+        slider.dataset.mobile = 'false';
+        if (slider.classList.contains('swiper-initialized')){
+            swiper.destroy(true, true);
+            // swiperTypes.destroy(true, true);
+            // swiperPrice.destroy(true, true);
+            if(wrapper.classList.contains('swiper-wrapper')){
+                wrapper.classList.remove('swiper-wrapper')
+            }
+        }
+
+        // if(sliderTypes.classList.contains('swiper-initialized')){
+        //     swiper.destroy(true, true);
+        //     // swiperTypes.destroy(true, true);
+        //     // swiperPrice.destroy(true, true);
+        // }
+    }
+
 }
 
-initSwiper(mySlider, 'swiper__item');
-initSwiper(sliderTypes, 'swiper__item');
-initSwiper(sliderPrice, 'section-table__row');
+initSwiper(mySlider, 'swiper__item', 240);
+initSwiper(sliderTypes, 'swiper__item', 240);
+initSwiper(sliderPrice, 'section-table__row', 295);
 
 // let swiper = new Swiper ( mySlider, {
 //     slidesPerView: 1,
@@ -167,36 +185,36 @@ initSwiper(sliderPrice, 'section-table__row');
 //     },
 // });
 
-function mobileSlider() {
-    /*
-    if (window.innerWidth < 768 && mySlider.dataset.mobile == "false") {
-        swiper = new Swiper ( mySlider, {
-            slidesPerView: 1,
-            width: 240,
-            spaceBetween: 16,
-            slideClass: 'swiper__item',
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true,
-            },
-        });
-        mySlider.dataset.mobile = 'true';
-    }*/
-    if (window.innerWidth >=768) {
-        mySlider.dataset.mobile = 'false';
-        if (mySlider.classList.contains('swiper-initialized')){
-            swiper.destroy(true, true);
-            swiperTypes.destroy(true, true);
-            swiperPrice.destroy(true, true);
-            if(wrapper.classList.contains('swiper-wrapper')){
-                wrapper.classList.remove('swiper-wrapper')
-            }
-        }
-    }
-}
+// function mobileSlider() {
+//     /*
+//     if (window.innerWidth < 768 && mySlider.dataset.mobile == "false") {
+//         swiper = new Swiper ( mySlider, {
+//             slidesPerView: 1,
+//             width: 240,
+//             spaceBetween: 16,
+//             slideClass: 'swiper__item',
+//             pagination: {
+//                 el: '.swiper-pagination',
+//                 type: 'bullets',
+//                 clickable: true,
+//             },
+//         });
+//         mySlider.dataset.mobile = 'true';
+//     }*/
+//     if (window.innerWidth >=768) {
+//         mySlider.dataset.mobile = 'false';
+//         if (mySlider.classList.contains('swiper-initialized')){
+//             swiper.destroy(true, true);
+//             swiperTypes.destroy(true, true);
+//             swiperPrice.destroy(true, true);
+//             if(wrapper.classList.contains('swiper-wrapper')){
+//                 wrapper.classList.remove('swiper-wrapper')
+//             }
+//         }
+//     }
+// }
 
-mobileSlider();
+// mobileSlider();
 
 // window.addEventListener('resize', () => {
 //     mobileSlider();

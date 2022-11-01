@@ -39,6 +39,10 @@
             min-width: 260px;
             max-height: 200px;
             margin-bottom: 30px;
+            &:hover{
+                box-shadow: 0 0 2px 1px #B8FFEC;
+                cursor: pointer;
+            }
         }
 
         @media (min-width: 768px) and (max-width: 1119px) {
